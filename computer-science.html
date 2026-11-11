@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Computer Science — Arya Panji</title>
+    <meta
+      name="description"
+      content="Arya Panji's work in computer science — ORACLE OS, Linux systems, a cybersecurity lab, hardware experiments, and the tools in between."
+    />
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/mark.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="nav-wrap content">
+      <nav class="nav" aria-label="Main">
+        <a class="wordmark" href="/" aria-label="Arya Panji — home">
+          <svg viewBox="0 0 9 9" aria-hidden="true">
+            <circle cx="4.5" cy="4.5" r="4.5" fill="#f6a78e" />
+          </svg>
+          Arya Panji
+        </a>
+
+        <div class="nav__links" id="nav-links">
+          <a class="nav__link" href="/">Home</a>
+          <a class="nav__link" href="/music.html">Music</a>
+          <a class="nav__link" href="/computer-science.html" aria-current="page"
+            >Computer Science</a
+          >
+        </div>
+
+        <a class="btn btn--secondary nav__cta" href="/index.html#contact"
+          >Get in Touch</a
+        >
+
+        <button
+          class="nav__toggle"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Menu"
+        >
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main" class="content">
+      <!-- ============ HERO ============ -->
+      <section class="cs-hero" aria-labelledby="cs-title">
+        <div class="cs-hero__copy">
+          <p class="eyebrow label-mono">Page 03 / Computer Science</p>
+
+          <h1 class="h1" id="cs-title">
+            Exploring the world<br />of technology.
+          </h1>
+
+          <p class="body-lg">
+            Building, experimenting, and learning through software, systems,
+            and technology.
+          </p>
+
+          <div class="cs-hero__actions">
+            <a class="btn btn--primary" href="#software">See my projects</a>
+            <a class="btn btn--secondary" href="#journey">Read about ORACLE OS</a>
+          </div>
+        </div>
+
+        <div class="cs-hero__visual">
+          <!-- VISUAL PLACEHOLDER — systems · replace with a real screenshot -->
+          <div class="terminal" role="img" aria-label="Terminal visual placeholder">
+            <p class="terminal__header">ARYA@ORACLE — ~/systems</p>
+            <p>$ uname -a</p>
+            <p>Linux oracle 6.x x86_64 GNU/Linux</p>
+            <p>$ profile --status</p>
+            <p>hardened · portable · custom</p>
+            <img class="terminal__accent" src="/assets/icons/accent-a.svg" alt="" />
+            <span class="placeholder__label terminal__flag">Visual Placeholder</span>
+          </div>
+        </div>
+      </section>
+
+      <hr class="rule" />
+
+      <!-- ============ 01 / JOURNEY ============ -->
+      <section class="cs-journey" id="journey" aria-labelledby="journey-title">
+        <div class="cs-journey__head">
+          <h2 class="h3" id="journey-title">How I got here</h2>
+          <p class="meta-mono">01 / Journey</p>
+        </div>
+
+        <div class="cs-journey__body">
+          <div class="cs-journey__text body-lg">
+            <p>
+              My interest in computers started the usual way — breaking things
+              and then wanting to know why they broke. That turned into a
+              Computer Science degree, a habit of installing Linux on
+              everything, and a growing focus on systems and security.
+            </p>
+            <p>
+              I learn by building. ORACLE OS exists because I wanted an
+              environment that was mine — configured, understood, and
+              reproducible. The security interest is the same instinct pointed
+              at how systems fail.
+            </p>
+          </div>
+
+          <div class="fact-list">
+            <div class="fact">
+              <p class="label-mono">Focus</p>
+              <p class="body-sm">Linux · Systems · Security</p>
+            </div>
+            <div class="fact">
+              <p class="label-mono">Studying</p>
+              <p class="body-sm">Computer Science</p>
+            </div>
+            <div class="fact">
+              <p class="label-mono">Project</p>
+              <p class="body-sm">ORACLE OS — Debian based</p>
+            </div>
+            <div class="fact">
+              <p class="label-mono">Currently</p>
+              <p class="body-sm">Experimenting &amp; learning</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 02 / SOFTWARE DEVELOPMENT ============ -->
+      <section class="cs-software" id="software" aria-labelledby="software-title">
+        <div class="section-heading">
+          <p class="eyebrow label-mono">02 / Software Development</p>
+          <div class="section-heading__row">
+            <h2 class="h3" id="software-title">Things I build</h2>
+          </div>
+        </div>
+
+        <div class="project-grid project-grid--two">
+          <article class="cs-project">
+            <div
+              class="cs-project__visual cs-project__visual--oracle"
+              role="img"
+              aria-label="ORACLE OS visual placeholder"
+            >
+              <span class="cs-project__visual-title">ORACLE OS</span>
+              <span class="cs-project__visual-sub">debian-based · personal</span>
+              <div class="cs-project__visual-rule" aria-hidden="true"></div>
+              <img src="/assets/icons/accent-b.svg" alt="" width="150" height="150" />
+              <span class="cs-project__visual-kicker">Linux Systems · Security Lab · Profiles</span>
+            </div>
+            <div class="cs-project__body">
+              <p class="label-mono">Personal Project</p>
+              <h3 class="h4">ORACLE OS</h3>
+              <p class="body-sm">
+                A personal Debian-based operating system project. Focus:
+                security lab, Linux systems, and customizable profiles.
+              </p>
+              <div class="cs-project__tags">
+                <span class="tag">Debian</span>
+                <span class="tag">Linux</span>
+                <span class="tag">Security</span>
+                <span class="tag">Profiles</span>
+              </div>
+              <p class="text-link cs-project__link">
+                <span class="arrow">↗</span>
+                <a href="https://github.com/AryaPanji-VA/Project-Oracle" rel="noopener">Project link</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="cs-project">
+            <div
+              class="cs-project__visual cs-project__visual--edubba"
+              role="img"
+              aria-label="EDUBBA visual placeholder"
+            >
+              <span class="cs-project__visual-title">EDUBBA</span>
+              <img src="/assets/icons/form-cs-a.svg" alt="" width="150" height="150" />
+              <span class="cs-project__visual-kicker">Software Project</span>
+            </div>
+            <div class="cs-project__body">
+              <p class="label-mono">Software Project</p>
+              <h3 class="h4">EDUBBA</h3>
+              <p class="body-sm">A software project.</p>
+              <div class="cs-project__tags">
+                <span class="tag">Software</span>
+                <span class="tag">Details TBD</span>
+              </div>
+              <p class="text-link cs-project__link">
+                <span class="arrow">↗</span>
+                <a href="#software">Project link</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <hr class="rule" />
+
+      <!-- ============ 03 / LINUX & SYSTEMS ============ -->
+      <section aria-labelledby="linux-title">
+        <div class="section-heading">
+          <p class="eyebrow label-mono">03 / Linux &amp; Systems</p>
+          <div class="section-heading__row">
+            <h2 class="h3" id="linux-title">Working in the machine</h2>
+          </div>
+        </div>
+
+        <div class="cs-linux" style="padding-top: 28px">
+          <div class="mini-card mini-card--blue">
+            <div class="mini-card__accent" aria-hidden="true"></div>
+            <p class="label-mono">Environments</p>
+            <p class="body-sm">
+              Distributions I actually run — daily drivers and test installs.
+            </p>
+          </div>
+          <div class="mini-card mini-card--peach">
+            <div class="mini-card__accent" aria-hidden="true"></div>
+            <p class="label-mono">OS Experiments</p>
+            <p class="body-sm">
+              Kernel, boot, and configuration experiments. Some of them worked.
+            </p>
+          </div>
+          <div class="mini-card mini-card--sage">
+            <div class="mini-card__accent" aria-hidden="true"></div>
+            <p class="label-mono">Configuration</p>
+            <p class="body-sm">Dotfiles, profiles, and reproducible setups.</p>
+          </div>
+          <div class="mini-card mini-card--butter">
+            <div class="mini-card__accent" aria-hidden="true"></div>
+            <p class="label-mono">Terminal Workflows</p>
+            <p class="body-sm">
+              Shell habits, tooling, and the scripts that save me time.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 04 / CYBERSECURITY LAB ============ -->
+      <section class="cs-security" aria-labelledby="security-title">
+        <div class="lab-panel">
+          <div class="lab-panel__copy">
+            <p class="eyebrow eyebrow--sage label-mono">04 / Cybersecurity Lab</p>
+            <h2 class="h2" id="security-title">
+              Learning by<br />breaking carefully.
+            </h2>
+            <p class="body-base">
+              A lab for understanding how systems fail before defending them:
+              isolated environments, exercises, and notes on what actually
+              happens. It is study, not a claim of professional security
+              expertise.
+            </p>
+          </div>
+
+          <div class="lab-list">
+            <div class="lab-item">
+              <span class="lab-item__num">01</span>
+              <p class="body-sm">Isolated lab environments</p>
+            </div>
+            <div class="lab-item">
+              <span class="lab-item__num">02</span>
+              <p class="body-sm">Vulnerability exercises</p>
+            </div>
+            <div class="lab-item">
+              <span class="lab-item__num">03</span>
+              <p class="body-sm">Notes &amp; write-ups</p>
+            </div>
+            <div class="lab-item">
+              <span class="lab-item__num">04</span>
+              <p class="body-sm">Defensive configuration</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 05 / HARDWARE ============ -->
+      <section class="cs-hardware" aria-labelledby="hardware-title">
+        <div class="section-heading">
+          <p class="eyebrow label-mono">05 / Hardware</p>
+          <div class="section-heading__row">
+            <h2 class="h3" id="hardware-title">Hands on the hardware</h2>
+          </div>
+        </div>
+
+        <div class="hardware-grid">
+          <div class="hardware-card">
+            <div
+              class="hardware-card__visual gallery-photo--blue"
+              role="img"
+              aria-label="Hardware photo placeholder"
+            >
+              <img src="/assets/icons/form-cs-a.svg" alt="" />
+              <span class="gallery-photo__label">Hardware</span>
+            </div>
+            <div class="hardware-card__body">
+              <p class="label-mono">Hardware Exploration</p>
+              <p class="body-sm">tearing down, rebuilding, understanding</p>
+            </div>
+          </div>
+
+          <div class="hardware-card">
+            <div
+              class="hardware-card__visual gallery-photo--peach"
+              role="img"
+              aria-label="USB experiments photo placeholder"
+            >
+              <img src="/assets/icons/form-cs-b.svg" alt="" />
+              <span class="gallery-photo__label">USB</span>
+            </div>
+            <div class="hardware-card__body">
+              <p class="label-mono">USB Experiments</p>
+              <p class="body-sm">bootable media, persistence, tooling</p>
+            </div>
+          </div>
+
+          <div class="hardware-card">
+            <div
+              class="hardware-card__visual gallery-photo--sage"
+              role="img"
+              aria-label="Embedded experiments photo placeholder"
+            >
+              <img src="/assets/icons/form-cs-b.svg" alt="" />
+              <span class="gallery-photo__label">Embedded</span>
+            </div>
+            <div class="hardware-card__body">
+              <p class="label-mono">Embedded (Future)</p>
+              <p class="body-sm">planned experiments with small boards</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="rule" />
+
+      <!-- ============ 06 / TECHNOLOGIES & TOOLS ============ -->
+      <section class="cs-tech" aria-labelledby="tech-title">
+        <div class="section-heading">
+          <p class="eyebrow label-mono">06 / Technologies &amp; Tools</p>
+          <div class="section-heading__row">
+            <h2 class="h3" id="tech-title">What I work with</h2>
+          </div>
+        </div>
+
+        <p class="body-sm tech-intro">
+          Tools I have used and am learning — not a claim of expertise level.
+        </p>
+
+        <div class="tech-grid">
+          <div class="tech-col">
+            <p class="label-mono">Programming</p>
+            <div class="tech-col__tools">
+              <span class="tech-tool">Python</span>
+              <span class="tech-tool">C</span>
+              <span class="tech-tool">JavaScript</span>
+              <span class="tech-tool">Java</span>
+            </div>
+          </div>
+
+          <div class="tech-col">
+            <p class="label-mono">Web Development</p>
+            <div class="tech-col__tools">
+              <span class="tech-tool">HTML</span>
+              <span class="tech-tool">CSS</span>
+              <span class="tech-tool">JavaScript</span>
+              <span class="tech-tool">Node</span>
+            </div>
+          </div>
+
+          <div class="tech-col">
+            <p class="label-mono">Linux &amp; Systems</p>
+            <div class="tech-col__tools">
+              <span class="tech-tool">Debian</span>
+              <span class="tech-tool">Bash</span>
+              <span class="tech-tool">systemd</span>
+              <span class="tech-tool">Networking</span>
+            </div>
+          </div>
+
+          <div class="tech-col">
+            <p class="label-mono">Security Tools</p>
+            <div class="tech-col__tools">
+              <span class="tech-tool">Nmap</span>
+              <span class="tech-tool">Wireshark</span>
+              <span class="tech-tool">Metasploit</span>
+              <span class="tech-tool">Burp</span>
+            </div>
+          </div>
+
+          <div class="tech-col">
+            <p class="label-mono">Development Tools</p>
+            <div class="tech-col__tools">
+              <span class="tech-tool">Git</span>
+              <span class="tech-tool">Neovim</span>
+              <span class="tech-tool">Docker</span>
+              <span class="tech-tool">VS Code</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="footer__inner content">
+        <div class="footer__top">
+          <div class="footer__identity">
+            <a class="wordmark" href="/">
+              <svg viewBox="0 0 9 9" aria-hidden="true">
+                <circle cx="4.5" cy="4.5" r="4.5" fill="#f6a78e" />
+              </svg>
+              Arya Panji
+            </a>
+            <p class="footer__tagline">
+              Musician · Computer Science student. Jakarta, Indonesia.
+            </p>
+          </div>
+
+          <div class="footer__columns">
+            <div class="footer__col">
+              <p class="footer__col-title">Navigate</p>
+              <a href="/">Home</a>
+              <a href="/music.html">Music</a>
+              <a href="/computer-science.html">Computer Science</a>
+            </div>
+            <div class="footer__col">
+              <p class="footer__col-title">Elsewhere</p>
+              <a href="mailto:panjiuslah@gmail.com">Email</a>
+              <a href="/music.html#platforms">Instagram</a>
+              <a href="/index.html#contact">GitHub</a>
+              <a href="/index.html#contact">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__rule-wrap">
+          <hr class="rule" />
+        </div>
+
+        <div class="footer__bottom meta-mono">
+          <p>© 2026 Arya Panji. All rights reserved.</p>
+          <p>Designed &amp; built with intent.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

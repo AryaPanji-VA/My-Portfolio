@@ -1,0 +1,374 @@
+/* ============================================================
+   Page-specific layout — hero splits, section grids
+   ============================================================ */
+
+/* ---------- Home hero ---------- */
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 560px) minmax(0, 1fr);
+  gap: var(--space-6);
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 72px;
+}
+
+.hero__copy {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  min-width: 0;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+
+.hero__live {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 16px;
+}
+
+.hero__live img {
+  width: 6px;
+  height: 6px;
+}
+
+.hero__visual {
+  justify-self: end;
+  width: 100%;
+  max-width: 560px;
+}
+
+@media (max-width: 860px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+    padding-top: var(--space-4);
+    padding-bottom: var(--space-7);
+  }
+
+  .hero__copy {
+    gap: var(--space-4);
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 4px;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+  }
+
+  .hero__visual {
+    justify-self: stretch;
+    max-width: none;
+  }
+}
+
+/* ---------- Home sections ---------- */
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 72px;
+  padding-bottom: 80px;
+}
+
+.worlds-section {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding-bottom: 80px;
+}
+
+.worlds-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.worlds-head__title {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.worlds-head__hint {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.work-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  padding-bottom: 80px;
+}
+
+/* ---------- Music page ---------- */
+.music-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 660px) minmax(0, 1fr);
+  gap: var(--space-6);
+  align-items: start;
+  padding-top: 56px;
+  padding-bottom: 72px;
+}
+
+.music-hero__copy {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  min-width: 0;
+}
+
+.music-hero__photo {
+  justify-self: end;
+  width: 100%;
+  max-width: 470px;
+}
+
+@media (max-width: 1020px) {
+  .music-hero {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  .music-hero__photo {
+    justify-self: stretch;
+    max-width: none;
+  }
+}
+
+.music-about {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding-top: 64px;
+  padding-bottom: 72px;
+}
+
+.music-about__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.music-about__head .meta-mono {
+  white-space: nowrap;
+}
+
+.music-about__body {
+  display: grid;
+  grid-template-columns: minmax(0, 600px) minmax(0, 1fr);
+  gap: var(--space-7);
+  align-items: start;
+}
+
+.music-about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+@media (max-width: 1020px) {
+  .music-about__body {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+}
+
+.music-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding-bottom: 72px;
+}
+
+.music-discography {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding-top: 64px;
+  padding-bottom: 72px;
+}
+
+.music-live {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding-bottom: 72px;
+}
+
+.gallery-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+@media (max-width: 860px) {
+  .gallery-row {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-row .gallery-photo {
+    height: 200px;
+  }
+}
+
+.music-platforms {
+  padding-bottom: 80px;
+}
+
+/* ---------- CS page ---------- */
+.cs-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 460px);
+  gap: var(--space-6);
+  align-items: center;
+  padding-top: 56px;
+  padding-bottom: 72px;
+}
+
+.cs-hero__copy {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  min-width: 0;
+}
+
+.cs-hero__actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+
+@media (max-width: 1020px) {
+  .cs-hero {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+    padding-top: var(--space-5);
+    padding-bottom: var(--space-7);
+  }
+
+  .cs-hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 4px;
+  }
+
+  .cs-hero__actions .btn {
+    width: 100%;
+  }
+
+  .terminal__accent {
+    width: 80px;
+    height: 80px;
+    right: 24px;
+    bottom: 24px;
+  }
+}
+
+.cs-journey {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding-top: 64px;
+  padding-bottom: 72px;
+}
+
+.cs-journey__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.cs-journey__head .meta-mono {
+  white-space: nowrap;
+}
+
+.cs-journey__body {
+  display: grid;
+  grid-template-columns: minmax(0, 600px) minmax(0, 1fr);
+  gap: var(--space-7);
+  align-items: start;
+}
+
+.cs-journey__text {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+@media (max-width: 1020px) {
+  .cs-journey__body {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+}
+
+.cs-software {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding-bottom: 72px;
+}
+
+.cs-linux {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-5);
+  padding-bottom: 72px;
+}
+
+@media (max-width: 1020px) {
+  .cs-linux {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .cs-linux {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cs-security {
+  padding-bottom: 72px;
+}
+
+.cs-security .lab-panel__copy {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.cs-hardware {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding-bottom: 72px;
+}
+
+.cs-tech {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding-bottom: 72px;
+}
